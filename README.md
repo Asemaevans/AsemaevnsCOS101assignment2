@@ -1,33 +1,31 @@
 # Assignmentcos2
 print("Hi user! Here are 5 physics formulas to solve your problem:")
 
-print("1. Speed = Distance / Time")
-print("2. Force = Mass * Acceleration")
-print("3. Density = Mass / Volume")
-print("4. Pressure = Force / Area")
-print("5. Work = Force * Distance")
+print("- Speed")
+print("- Force")
+print("- Density")
+print("- Pressure")
+print("- Work")
 
-choice = input("Pick a formula number (1-5): ")
+choice = input("Type the formula name you want to use: ").lower()
 
-if choice == "1":
+if choice == "speed":
     d = float(input("Enter distance: "))
     t = float(input("Enter time: "))
     print("Speed =", d/t)
-elif choice == "2":
+elif choice == "force":
     m = float(input("Enter mass: "))
     a = float(input("Enter acceleration: "))
     print("Force =", m*a)
-elif choice == "3":
+elif choice == "density":
     m = float(input("Enter mass: "))
     v = float(input("Enter volume: "))
     print("Density =", m/v)
-elif choice == "4":
+elif choice == "pressure":
     f = float(input("Enter force: "))
     A = float(input("Enter area: "))
     print("Pressure =", f/A)
-elif choice == "5":
+elif choice == "work":
     f = float(input("Enter force: "))
     d = float(input("Enter distance: "))
     print("Work =", f*d)
-else:
-    print("Invalid choice!")
